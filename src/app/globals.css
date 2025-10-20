@@ -1,0 +1,33 @@
+/* css */
+@import "tailwindcss";
+
+:root {
+    --background: #111827; /* tailwind gray-900 */
+    --foreground: #e5e7eb; /* tailwind gray-200 */
+    --font-source-code-pro: 'Source Code Pro', monospace;
+
+    --nextra-primary-hue: 125;      /* 125deg */
+    --nextra-primary-saturation: 100%;
+}
+
+html.dark,
+[data-theme='dark'] {
+    --nextra-primary-hue: 125;
+    --nextra-primary-saturation: 100%;
+}
+
+@layer base {
+    html, body {
+        @apply bg-gray-900 text-gray-200;
+    }
+}
+
+/* Sidebar toggle button container background color */
+aside.nextra-sidebar-container,
+aside.nextra-sidebar-container > div,
+aside[class*='sidebar'] > div {
+    background-color: var(--background) !important;
+}
+
+/* globals.css */
+.nextra-timestamp { display: none !important; }
