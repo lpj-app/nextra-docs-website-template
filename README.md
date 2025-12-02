@@ -236,6 +236,21 @@ export default async function Page(props) {
 }
 ```
 
+#### Custom created and updated timestamps
+If you want timestamps on your articles like when it was created or last updated, you can add the following to your `src/app/[[...mdxPath]]/page.jsx` file:
+```tsx
+import { DocMeta } from '../../components/PageMetadata'
+
+/* ... your content */
+
+<DocMeta created={"20.10.2025"} updated={"02.12.2025"}/>
+```
+
+Now you will see a timestamp on your articles at the bottom left and right. <br/>
+If you want to display it on top, just move the `<DocMeta .../>` component above your content. <br/>
+If you only want to show the last updated timestamp, you can remove the created timestamp, both timestamps are not mandatory.
+Also if you only want e.g a updated timestamp, you can remove the created timestamp and it will still show up on the right side. 
+
 ---
 ## License
 

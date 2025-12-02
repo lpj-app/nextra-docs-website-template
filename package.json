@@ -1,7 +1,9 @@
 {
-  "name": "nextra",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextra-documentation-website-template",
+  "version": "0.1.1",
+  "author": "Luca-Pascal Junge",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
